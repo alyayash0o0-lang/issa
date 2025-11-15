@@ -67,6 +67,8 @@ st.markdown("""
     /* Calendar container - allow full width but keep spacing */
     .calendar-container { padding: 1rem; border-radius: 18px; max-width: 980px; width: 98%; margin: 0.6rem auto 1rem auto; }
     .calendar-day-header { text-align:center; font-weight:700; color:#ffffff; padding:0.35rem 0; font-size: clamp(0.6rem, 2.2vw, 0.9rem); }
+    background: linear-gradient(90deg, #56CCF2 0%, #2F80ED 100%);
+
 
     .back-btn { text-align:center; margin-top:1rem; }
 
@@ -567,5 +569,6 @@ elif st.session_state.current_page == "mood_selector":
     show_mood_selector_page()
 elif st.session_state.current_page == "mood_result":
     show_mood_result_page()
+
 
 
