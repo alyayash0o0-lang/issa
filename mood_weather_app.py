@@ -102,4 +102,3 @@ st.markdown("""
 Made for someone special — because every sky tells a story 🌦
 </p>
 """, unsafe_allow_html=True)
-
