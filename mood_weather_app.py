@@ -53,7 +53,7 @@ st.markdown("""
     .stButton > button {
         width: 100%; max-width: 520px; display:block; margin: 0.6rem auto; padding: 0.9rem 1rem; border-radius: 14px;
         background: linear-gradient(90deg, #56CCF2 0%, #2F80ED 100%); font-size: 1rem; font-weight:600; border:none; cursor:pointer;
-        box-shadow: 0 8px 25px rgba(47, 128, 237, 0.18); transition: all 0.2s ease; white-space: normal; word-break: break-word; line-height:1.1;
+        box-shadow: 0 8px 25px rgba(47, 128, 237, 0.18); transition: all 0.2s ease; word-break: break-word; line-height:1.1;
     }
     .stButton > button:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(47,128,237,0.2); }
 
@@ -567,4 +567,5 @@ elif st.session_state.current_page == "mood_selector":
     show_mood_selector_page()
 elif st.session_state.current_page == "mood_result":
     show_mood_result_page()
+
 
