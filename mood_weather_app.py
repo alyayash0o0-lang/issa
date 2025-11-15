@@ -117,7 +117,12 @@ st.markdown("""
     .stButton > button:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(47,128,237,0.2); }
     .date-link { display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#061124; padding:10px 12px; border-radius:12px; background: rgba(255,255,255,0.98); min-height:64px; box-shadow: 0 8px 20px rgba(8,30,60,0.08); border: 1px solid rgba(0,0,0,0.04); }
     .date-link:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(8,30,60,0.10); }
-    .date-num { font-weight:700; font-size:0.95rem; text-decoration: none}
+    .date-num {
+    font-weight:700;
+    font-size:0.95rem;
+    color:#061124;
+    text-decoration:none;
+    }
     .date-emoji { font-size:1.15rem; margin-top:6px; }
     .calendar-cell.empty { background: transparent; }
     .calendar-cell.today .date-link { outline: 2px solid rgba(255,255,255,0.16); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
@@ -572,6 +577,7 @@ elif st.session_state.current_page == "mood_selector":
     show_mood_selector_page()
 elif st.session_state.current_page == "mood_result":
     show_mood_result_page()
+
 
 
 
