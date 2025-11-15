@@ -112,7 +112,8 @@ st.markdown("""
     .calendar-table thead th { padding: 6px 4px; font-weight:700; color:#ffffff; text-align:center; }
     .calendar-cell { width:14.2857%; padding:6px; vertical-align: top; }
     /* Date box: make visible rounded white cards so dates are tappable and readable */
-    .background: linear-gradient(90deg, #56CCF2 0%, #2F80ED 100%);
+    .background: linear-gradient{(90deg, #56CCF2 0%, #2F80ED 100%); font-size: 1rem; font-weight:600; border:none; cursor:pointer; }
+    .box-shadow: 0 8px 25px rgba{(47, 128, 237, 0.18); transition: all 0.2s ease; word-break: break-word; line-height:1.1; }
     .date-link { display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#061124; padding:10px 12px; border-radius:12px; background: rgba(255,255,255,0.98); min-height:64px; box-shadow: 0 8px 20px rgba(8,30,60,0.08); border: 1px solid rgba(0,0,0,0.04); }
     .date-link:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(8,30,60,0.10); }
     .date-num { font-weight:700; font-size:0.95rem; color:#061124; text-decoration: none}
@@ -570,6 +571,7 @@ elif st.session_state.current_page == "mood_selector":
     show_mood_selector_page()
 elif st.session_state.current_page == "mood_result":
     show_mood_result_page()
+
 
 
 
