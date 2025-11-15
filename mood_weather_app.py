@@ -20,7 +20,7 @@ st.markdown("""
     button[kind="primary"] {
         border-radius: 12px;
         background: linear-gradient(90deg, #56CCF2 0%, #2F80ED 100%);
-        color: black;
+        color: white;
         font-size: 1.1em;
         font-weight: 600;
         transition: 0.2s;
@@ -102,3 +102,4 @@ st.markdown("""
 Made for someone special — because every sky tells a story 🌦
 </p>
 """, unsafe_allow_html=True)
+
