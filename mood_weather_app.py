@@ -109,8 +109,9 @@ st.markdown("""
     .calendar-table { width:100%; border-collapse: collapse; margin-top: 0.6rem; }
     .calendar-table thead th { padding: 6px 4px; font-weight:700; color:#ffffff; text-align:center; }
     .calendar-cell { width:14.2857%; padding:6px; vertical-align: top; }
-    .date-link { display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:inherit; padding:8px; border-radius:10px; background: rgba(255,255,255,0.03); min-height:60px; }
-    .date-link:hover { background: rgba(255,255,255,0.06); }
+    /* Date box: make visible rounded white cards so dates are tappable and readable */
+    .date-link { display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#061124; padding:10px 12px; border-radius:12px; background: rgba(255,255,255,0.98); min-height:64px; box-shadow: 0 8px 20px rgba(8,30,60,0.08); border: 1px solid rgba(0,0,0,0.04); }
+    .date-link:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(8,30,60,0.10); }
     .date-num { font-weight:700; font-size:0.95rem; color:#061124; }
     .date-emoji { font-size:1.15rem; margin-top:6px; }
     .calendar-cell.empty { background: transparent; }
@@ -121,7 +122,7 @@ st.markdown("""
         .calendar-table thead, .calendar-table tbody, .calendar-table tr { display:inline-block; vertical-align:top; }
         .calendar-table tr { margin-right: 8px; }
         .calendar-cell { display:block; width: 100%; }
-        .date-link { min-width: 64px; min-height:56px; padding:6px; }
+        .date-link { min-width: 72px; min-height:56px; padding:8px 10px; border-radius:10px; }
     }
 </style>
 """, unsafe_allow_html=True)
@@ -566,4 +567,3 @@ elif st.session_state.current_page == "mood_selector":
     show_mood_selector_page()
 elif st.session_state.current_page == "mood_result":
     show_mood_result_page()
-
